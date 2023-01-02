@@ -6,13 +6,13 @@
 * @z: int
 * Return: a pointer to memory area s
 **/
-char *_memset(char *x, char y, unsigned int z)
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
 
-	for (i = 0; i < z ; i++)
+	for (i = 0; i < n ; i++)
 	{
-		x[i] = y;
+		s[i] = b;
 	}
-	return (x);
+	return (s);
 }

@@ -3,12 +3,11 @@
 #include <stdio.h>
 /**
  * main - Determine if the last digit of a random number is
- * greater than or less than 5, or is zero 
+ * greater than or less than 5, or is zero
  */
 int main(void)
 {
 	int n;
-	
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n % 10 > 5 )
@@ -17,11 +16,11 @@ int main(void)
 	}
 	else if (n % 10 == 0)
 	{
-		printf("Last digit of %d is %d and is zero\n", n, n % 10);
+		printf("Last digit of %d is %d and is 0\n", n, n % 10);
 	}
 	else
 	{
-		printf("Last digit of %d is %d and is less than 6 and not zero\n", n, n % 10);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, n % 10);
 	}
 	return (0);
 }

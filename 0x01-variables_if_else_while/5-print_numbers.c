@@ -12,7 +12,7 @@ char digit = 0;
 
 for (digit = 0; digit <= 9; digit++)
 {
-putchar("%d", digit);
+printf("%d", digit);
 }
 putchar('\n');
 

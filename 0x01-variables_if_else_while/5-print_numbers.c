@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - prints the alphabet in lowercase, followed by a newline
+ * main - print all single digit numbers, followed by a newline
  *
  * Return: always 0
  */
 
 int main(void)
 {
-char letter;
+char digit = 0;
 
-for (letter = 'a'; letter <= 'z'; letter++)
+for (digit = 0; digit <= 9; digit++)
 {
-putchar(letter);
+printf("%d", digit);
 }
 putchar('\n');
 

@@ -1,19 +1,24 @@
 #include <stdio.h>
 
 /**
- * main - print all single digit numbers using putchar, followed by a newline
+ * main - print all single digit numbers base 16 using putchar, followed by a newline
  *
  * Return: always 0
  */
 
 int main(void)
 {
-int digit = 0;
+int x = 0;
 
-for (digit = '0'; digit <= '9'; digit++)
+for (x = '0'; x <= '9'; x++)
 {
-putchar(digit);
+putchar(x);
 }
+for (x = 'a'; x <= 'f'; x++)
+{
+putchar(x);
+}
+
 putchar('\n');
 
 return (0);
